@@ -220,70 +220,46 @@ function closeRSVPModalDirect() {
   }
 }
 
-// 6. Ambient Festive Audio (Web Audio API Synthesizer)
-let audioCtx = null;
+// 6. Ambient BGM: "Here Comes the Sun" (Instrumental, No Vocals @ 0.8x Speed)
+let bgAudio = null;
 let isAudioPlaying = false;
-let audioInterval = null;
 const audioBtn = document.getElementById('audio-toggle-btn');
 
 function initAudio() {
-  if (!audioCtx) {
-    const AudioContext = window.AudioContext || window.webkitAudioContext;
-    audioCtx = new AudioContext();
+  if (!bgAudio) {
+    bgAudio = new Audio('audio/here-comes-the-sun-instrumental.mp3');
+    bgAudio.loop = true;
+    bgAudio.volume = 0.5;
+    bgAudio.playbackRate = 0.8;
   }
-  if (audioCtx.state === 'suspended') {
-    audioCtx.resume();
-  }
-}
-
-function playFestiveNote(freq, time, duration = 0.8) {
-  if (!audioCtx) return;
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-
-  osc.type = 'sine';
-  osc.frequency.setValueAtTime(freq, time);
-
-  // Soft attack and decay chime envelope
-  gain.gain.setValueAtTime(0, time);
-  gain.gain.linearRampToValueAtTime(0.08, time + 0.05);
-  gain.gain.exponentialRampToValueAtTime(0.0001, time + duration);
-
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-
-  osc.start(time);
-  osc.stop(time + duration);
-}
-
-// Gentle festive chord arpeggios (C major / G major / A minor / F major)
-const melodyNotes = [
-  523.25, 659.25, 783.99, 1046.50, // C5, E5, G5, C6
-  587.33, 739.99, 880.00, 1174.66, // D5, F#5, A5, D6
-  440.00, 523.25, 659.25, 880.00,  // A4, C5, E5, A5
-  698.46, 880.00, 1046.50, 1318.51 // F5, A5, C6, E6
-];
-
-let noteStep = 0;
-function playNextArpeggioStep() {
-  if (!isAudioPlaying || !audioCtx) return;
-  const now = audioCtx.currentTime;
-  const freq = melodyNotes[noteStep % melodyNotes.length];
-  playFestiveNote(freq, now, 1.2);
-  noteStep++;
 }
 
 function startFestiveAudio() {
   initAudio();
-  if (isAudioPlaying) return;
-  isAudioPlaying = true;
-  if (audioBtn) audioBtn.classList.add('playing');
-  audioInterval = setInterval(playNextArpeggioStep, 600);
+  if (bgAudio) {
+    bgAudio.playbackRate = 0.8;
+    const playPromise = bgAudio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          isAudioPlaying = true;
+          bgAudio.playbackRate = 0.8;
+          if (audioBtn) audioBtn.classList.add('playing');
+        })
+        .catch((err) => {
+          console.warn('Audio play prevented by browser policy:', err);
+          isAudioPlaying = false;
+          if (audioBtn) audioBtn.classList.remove('playing');
+        });
+    }
+  }
 }
 
 function stopFestiveAudio() {
+  if (bgAudio) {
+    bgAudio.pause();
+  }
   isAudioPlaying = false;
-  if (audioInterval) clearInterval(audioInterval);
   if (audioBtn) audioBtn.classList.remove('playing');
 }
 
