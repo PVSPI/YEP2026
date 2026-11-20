@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5.3" />
+  <link rel="stylesheet" href="styles.css?v=5.4" />
 </head>
 <body class="locked">
 
@@ -57,6 +57,7 @@
         <a href="#schedule" class="nav-link">Schedule</a>
         <a href="#solicitation" class="nav-link">Support &amp; QR</a>
         <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#rsvp" class="nav-link nav-btn-cta">RSVP</a>
       </nav>
     </div>
   </header>
@@ -483,6 +484,92 @@
       </div>
     </section>
 
+    <!-- RSVP Section -->
+    <section id="rsvp" class="section rsvp-section">
+      <div class="container">
+        <div class="rsvp-card-wrapper">
+          <div class="rsvp-header text-center">
+            <p class="section-script-subtitle">Confirm Your Seat</p>
+            <h2 class="section-title">RSVP For Year End Party</h2>
+            <div class="title-underline center"></div>
+            <div class="rsvp-deadline-pill">
+              ⚠️ Strict Deadline: <strong>Before November 23, 2026</strong>
+            </div>
+            <p class="rsvp-instructions">
+              Please let JB and the committee know if you can make it so food, seats, and game slots can be finalized.
+            </p>
+          </div>
+
+          <form id="rsvp-form" class="rsvp-form" onsubmit="handleRSVPSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="name" placeholder="e.g. Juan dela Cruz" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email or Contact Number <span class="required">*</span></label>
+                <input type="text" id="email" name="email" placeholder="e.g. 0917 123 4567 or email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="attendance">Will You Attend? <span class="required">*</span></label>
+                <select id="attendance" name="attendance" required>
+                  <option value="" disabled selected>Select Attendance</option>
+                  <option value="Yes, Count me in!">Yes! Count me in (Dec 9 at 1:00 PM)</option>
+                  <option value="Maybe / Tentative">Tentative / Pending Confirmation</option>
+                  <option value="Regretfully Cannot">Regretfully Cannot Make It</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="companions">Bringing Companions? (Quantity) <span class="required">*</span></label>
+                <select id="companions" name="companions" required>
+                  <option value="0 - Just me (Solo)" selected>0 — Just me (Solo)</option>
+                  <option value="+1 Companion">+1 Companion</option>
+                  <option value="+2 Companions">+2 Companions</option>
+                  <option value="+3 Companions">+3 Companions</option>
+                  <option value="+4 or more">+4 or more</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="attireConfirmed">Dress Code Theme</label>
+              <input type="text" id="attireConfirmed" name="theme" value="&quot;Tambay&quot; Attire (Confirmed)" readonly />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group checkbox-group" style="grid-column: span 2;">
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="giftAgreement" name="giftAgreement" required />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-text">I confirm I will bring a <strong>₱500 Unisex Exchange Gift</strong>.</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="dietary">Dietary Preferences or Special Requests</label>
+              <textarea id="dietary" name="dietary" rows="2" placeholder="e.g., Vegetarian, allergic to shrimp, non-alcoholic drinks only..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Song Request or Note to the Committee</label>
+              <textarea id="message" name="message" rows="2" placeholder="Leave a cheer, a song you want played, or a shoutout!"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn-submit">
+                <span>Submit My RSVP</span>
+                <span class="btn-icon">📨</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
@@ -527,6 +614,20 @@
     </div>
   </div>
 
-  <script src="script.js?v=5.2"></script>
+  <!-- RSVP Confirmation Modal -->
+  <div id="rsvp-modal" class="rsvp-modal" onclick="closeRSVPModal(event)">
+    <div class="modal-card">
+      <div class="modal-confetti">🎉</div>
+      <h3 class="modal-title">RSVP Received!</h3>
+      <p class="modal-subtitle">Thank you for confirming your spot for PV Sinag Year End Party 2026.</p>
+      <div id="modal-summary" class="modal-summary"></div>
+      <p class="modal-reminder">
+        Remember to prepare your <strong>₱500 Unisex Exchange Gift</strong> and wear your best <strong>"Tambay" Attire</strong> on <strong>Dec 9, 2026 at 1:00 PM</strong> at the PVS Staff House!
+      </p>
+      <button class="modal-close-btn" onclick="closeRSVPModalDirect()">Got It!</button>
+    </div>
+  </div>
+
+  <script src="script.js?v=5.5"></script>
 </body>
 </html>

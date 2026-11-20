@@ -125,13 +125,102 @@ function closeLightboxDirect() {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (!lightboxModal || !lightboxModal.classList.contains('active')) return;
-  if (e.key === 'Escape') closeLightboxDirect();
-  if (e.key === 'ArrowRight') nextLightbox();
-  if (e.key === 'ArrowLeft') prevLightbox();
+  if (lightboxModal && lightboxModal.classList.contains('active')) {
+    if (e.key === 'Escape') closeLightboxDirect();
+    if (e.key === 'ArrowRight') nextLightbox();
+    if (e.key === 'ArrowLeft') prevLightbox();
+  }
+  if (rsvpModal && rsvpModal.classList.contains('active')) {
+    if (e.key === 'Escape') closeRSVPModalDirect();
+  }
 });
 
-// 5. Ambient Festive Audio (Web Audio API Synthesizer)
+// 5. RSVP Submission & Confirmation Modal (Direct to Google Forms)
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfmKKZ812h6MMr8fze-PDZvgBRPmGuFJJytEv9M2k3FRaBvdQ/formResponse';
+const rsvpModal = document.getElementById('rsvp-modal');
+const modalSummary = document.getElementById('modal-summary');
+
+async function handleRSVPSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('rsvp-form');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+
+  const name = document.getElementById('fullName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const attendance = document.getElementById('attendance') ? document.getElementById('attendance').value : 'Attending';
+  const companions = document.getElementById('companions') ? document.getElementById('companions').value : '0 - Just me (Solo)';
+  const dietary = document.getElementById('dietary').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Visual loading state
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Submitting RSVP...</span> <span class="btn-icon">⏳</span>';
+  }
+
+  // Construct payload mapped directly to Google Form entry IDs
+  const formData = new URLSearchParams();
+  formData.append('entry.1029872924', name);
+  formData.append('entry.286667382', email);
+  formData.append('entry.1205459523', companions);
+  formData.append('entry.942247098', 'I confirm I will bring ₱500 Unisex Exchange Gift');
+  formData.append('entry.562072044', dietary || 'None');
+  formData.append('entry.193264800', message || 'None');
+
+  try {
+    await fetch(GOOGLE_FORM_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: formData.toString()
+    });
+  } catch (err) {
+    console.warn('Google Form submission note:', err);
+  }
+
+  // Restore button state
+  if (submitBtn) {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalBtnHtml;
+  }
+
+  // Populate confirmation card
+  if (modalSummary) {
+    modalSummary.innerHTML = `
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Contact:</strong> ${email}</p>
+      <p><strong>Attendance:</strong> ${attendance}</p>
+      <p><strong>Companions:</strong> ${companions}</p>
+      <p><strong>Dress Code:</strong> "Tambay" Attire</p>
+      <p><strong>Exchange Gift:</strong> ₱500 Unisex Confirmed</p>
+      ${dietary ? `<p><strong>Dietary Note:</strong> ${dietary}</p>` : ''}
+      ${message ? `<p><strong>Note / Song Request:</strong> ${message}</p>` : ''}
+    `;
+  }
+
+  if (rsvpModal) {
+    rsvpModal.classList.add('active');
+  }
+
+  form.reset();
+}
+
+function closeRSVPModal(e) {
+  if (e.target === rsvpModal) {
+    rsvpModal.classList.remove('active');
+  }
+}
+
+function closeRSVPModalDirect() {
+  if (rsvpModal) {
+    rsvpModal.classList.remove('active');
+  }
+}
+
+// 6. Ambient Festive Audio (Web Audio API Synthesizer)
 let audioCtx = null;
 let isAudioPlaying = false;
 let audioInterval = null;
