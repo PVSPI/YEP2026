@@ -1,0 +1,103 @@
+<svg class="flank-particles-svg flank-right" viewBox="0 0 450 780" preserveAspectRatio="xMaxYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="bokehBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <radialGradient id="bokehGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0bd" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#f5c97a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#e8b159" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="bokehCore" cx="45%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffd57a" stop-opacity="0.1" />
+    </radialGradient>
+    <linearGradient id="goldFoil1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5c0" />
+      <stop offset="50%" stop-color="#dfaa52" />
+      <stop offset="100%" stop-color="#9d6d24" />
+    </linearGradient>
+    <linearGradient id="goldFoil2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7da92" />
+      <stop offset="60%" stop-color="#c98a33" />
+      <stop offset="100%" stop-color="#7a4e12" />
+    </linearGradient>
+    <linearGradient id="goldFoil3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#e8be6d" />
+      <stop offset="100%" stop-color="#b88330" />
+    </linearGradient>
+  </defs>
+    <circle cx="410" cy="370" r="95" fill="url(#bokehGrad)" opacity="0.42" filter="url(#bokehBlur)" />
+    <circle cx="410" cy="370" r="57.0" fill="url(#bokehCore)" opacity="0.29" />
+    <circle cx="365" cy="230" r="75" fill="url(#bokehGrad)" opacity="0.48" filter="url(#bokehBlur)" />
+    <circle cx="365" cy="230" r="45.0" fill="url(#bokehCore)" opacity="0.34" />
+    <circle cx="430" cy="170" r="55" fill="url(#bokehGrad)" opacity="0.55" filter="url(#bokehBlur)" />
+    <circle cx="430" cy="170" r="33.0" fill="url(#bokehCore)" opacity="0.39" />
+    <circle cx="330" cy="440" r="60" fill="url(#bokehGrad)" opacity="0.38" filter="url(#bokehBlur)" />
+    <circle cx="330" cy="440" r="36.0" fill="url(#bokehCore)" opacity="0.27" />
+    <circle cx="385" cy="530" r="85" fill="url(#bokehGrad)" opacity="0.45" filter="url(#bokehBlur)" />
+    <circle cx="385" cy="530" r="51.0" fill="url(#bokehCore)" opacity="0.32" />
+    <circle cx="285" cy="300" r="45" fill="url(#bokehGrad)" opacity="0.32" filter="url(#bokehBlur)" />
+    <circle cx="285" cy="300" r="27.0" fill="url(#bokehCore)" opacity="0.22" />
+    <circle cx="405" cy="640" r="65" fill="url(#bokehGrad)" opacity="0.38" filter="url(#bokehBlur)" />
+    <circle cx="405" cy="640" r="39.0" fill="url(#bokehCore)" opacity="0.27" />
+    <circle cx="345" cy="120" r="40" fill="url(#bokehGrad)" opacity="0.5" filter="url(#bokehBlur)" />
+    <circle cx="345" cy="120" r="24.0" fill="url(#bokehCore)" opacity="0.35" />
+    <circle cx="260" cy="490" r="38" fill="url(#bokehGrad)" opacity="0.28" filter="url(#bokehBlur)" />
+    <circle cx="260" cy="490" r="22.8" fill="url(#bokehCore)" opacity="0.2" />
+    <circle cx="435" cy="450" r="50" fill="url(#bokehGrad)" opacity="0.48" filter="url(#bokehBlur)" />
+    <circle cx="435" cy="450" r="30.0" fill="url(#bokehCore)" opacity="0.34" />
+    <circle cx="310" cy="190" r="32" fill="url(#bokehGrad)" opacity="0.4" filter="url(#bokehBlur)" />
+    <circle cx="310" cy="190" r="19.2" fill="url(#bokehCore)" opacity="0.28" />
+    <rect x="293" y="224" width="6.3" height="6.3" rx="0.8" transform="rotate(-1 293 224)" fill="url(#goldFoil1)" opacity="0.8" />
+    <polygon points="367,46 372,52 367,58 362,52" transform="rotate(32 367 52)" fill="url(#goldFoil3)" opacity="0.9" />
+    <rect x="312" y="332" width="5.1" height="5.1" rx="0.8" transform="rotate(-58 312 332)" fill="url(#goldFoil1)" opacity="0.8" />
+    <polygon points="350,408 355,414 350,420 345,414" transform="rotate(-8 350 414)" fill="url(#goldFoil1)" opacity="0.9" />
+    <rect x="379" y="214" width="7.2" height="7.2" rx="0.8" transform="rotate(-47 379 214)" fill="url(#goldFoil2)" opacity="0.8" />
+    <rect x="193" y="206" width="11.8" height="4.5" rx="1" transform="rotate(-40 193 206)" fill="url(#goldFoil2)" opacity="0.85" />
+    <rect x="384" y="660" width="9.5" height="6.0" rx="1" transform="rotate(33 384 660)" fill="url(#goldFoil3)" opacity="0.85" />
+    <rect x="369" y="569" width="12.2" height="6.6" rx="1" transform="rotate(-47 369 569)" fill="url(#goldFoil1)" opacity="0.85" />
+    <rect x="240" y="353" width="5.6" height="5.6" rx="0.8" transform="rotate(-23 240 353)" fill="url(#goldFoil1)" opacity="0.8" />
+    <rect x="358" y="620" width="7.9" height="7.9" rx="0.8" transform="rotate(56 358 620)" fill="url(#goldFoil2)" opacity="0.8" />
+    <rect x="316" y="669" width="12.8" height="4.5" rx="1" transform="rotate(-46 316 669)" fill="url(#goldFoil2)" opacity="0.85" />
+    <rect x="396" y="336" width="8.9" height="5.8" rx="1" transform="rotate(27 396 336)" fill="url(#goldFoil3)" opacity="0.85" />
+    <rect x="347" y="430" width="7.2" height="7.2" rx="0.8" transform="rotate(-29 347 430)" fill="url(#goldFoil3)" opacity="0.8" />
+    <rect x="264" y="492" width="5.9" height="5.9" rx="0.8" transform="rotate(-16 264 492)" fill="url(#goldFoil2)" opacity="0.8" />
+    <rect x="228" y="525" width="5.9" height="5.9" rx="0.8" transform="rotate(-23 228 525)" fill="url(#goldFoil2)" opacity="0.8" />
+    <rect x="392" y="327" width="5.9" height="5.9" rx="0.8" transform="rotate(52 392 327)" fill="url(#goldFoil3)" opacity="0.8" />
+    <polygon points="313,44 318,50 313,56 308,50" transform="rotate(-25 313 50)" fill="url(#goldFoil3)" opacity="0.9" />
+    <rect x="331" y="341" width="9.8" height="6.7" rx="1" transform="rotate(-34 331 341)" fill="url(#goldFoil3)" opacity="0.85" />
+    <rect x="287" y="237" width="5.9" height="5.9" rx="0.8" transform="rotate(19 287 237)" fill="url(#goldFoil1)" opacity="0.8" />
+    <polygon points="243,141 248,147 243,153 238,147" transform="rotate(-54 243 147)" fill="url(#goldFoil1)" opacity="0.9" />
+    <rect x="341" y="465" width="11.2" height="5.5" rx="1" transform="rotate(-36 341 465)" fill="url(#goldFoil1)" opacity="0.85" />
+    <rect x="287" y="53" width="11.6" height="4.3" rx="1" transform="rotate(30 287 53)" fill="url(#goldFoil2)" opacity="0.85" />
+    <polygon points="384,676 389,682 384,688 379,682" transform="rotate(2 384 682)" fill="url(#goldFoil1)" opacity="0.9" />
+    <rect x="391" y="356" width="7.4" height="7.4" rx="0.8" transform="rotate(3 391 356)" fill="url(#goldFoil2)" opacity="0.8" />
+    <polygon points="210,325 215,331 210,337 205,331" transform="rotate(48 210 331)" fill="url(#goldFoil2)" opacity="0.9" />
+    <rect x="370" y="213" width="11.6" height="5.6" rx="1" transform="rotate(16 370 213)" fill="url(#goldFoil3)" opacity="0.85" />
+    <rect x="367" y="101" width="8.6" height="5.0" rx="1" transform="rotate(-25 367 101)" fill="url(#goldFoil3)" opacity="0.85" />
+    <polygon points="391,196 396,202 391,208 386,202" transform="rotate(23 391 202)" fill="url(#goldFoil2)" opacity="0.9" />
+    <rect x="315" y="324" width="5.1" height="5.1" rx="0.8" transform="rotate(-35 315 324)" fill="url(#goldFoil3)" opacity="0.8" />
+    <polygon points="215,423 220,429 215,435 210,429" transform="rotate(-2 215 429)" fill="url(#goldFoil2)" opacity="0.9" />
+    <polygon points="315,528 320,534 315,540 310,534" transform="rotate(35 315 534)" fill="url(#goldFoil2)" opacity="0.9" />
+    <rect x="327" y="306" width="11.8" height="6.2" rx="1" transform="rotate(20 327 306)" fill="url(#goldFoil2)" opacity="0.85" />
+    <rect x="152" y="402" width="6.3" height="6.3" rx="0.8" transform="rotate(48 152 402)" fill="url(#goldFoil1)" opacity="0.8" />
+    <polygon points="221,163 226,169 221,175 216,169" transform="rotate(-28 221 169)" fill="url(#goldFoil2)" opacity="0.9" />
+    <rect x="367" y="677" width="5.2" height="5.2" rx="0.8" transform="rotate(-9 367 677)" fill="url(#goldFoil3)" opacity="0.8" />
+    <rect x="177" y="197" width="12.7" height="4.1" rx="1" transform="rotate(-51 177 197)" fill="url(#goldFoil1)" opacity="0.85" />
+    <g transform="translate(349,82)"><polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="1.5" fill="#ffd56b" /></g>
+    <g transform="translate(342,363)"><polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="1.5" fill="#ffd56b" /></g>
+    <g transform="translate(278,205)"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.5" fill="#ffd56b" /></g>
+    <g transform="translate(339,298)"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.5" fill="#ffd56b" /></g>
+    <g transform="translate(268,533)"><polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="1.5" fill="#ffd56b" /></g>
+    <g transform="translate(222,171)"><polygon points="0,-8 2.0,-2.0 8,0 2.0,2.0 0,8 -2.0,2.0 -8,0 -2.0,-2.0" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.0" fill="#ffd56b" /></g>
+    <g transform="translate(369,85)"><polygon points="0,-8 2.0,-2.0 8,0 2.0,2.0 0,8 -2.0,2.0 -8,0 -2.0,-2.0" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.0" fill="#ffd56b" /></g>
+    <g transform="translate(276,632)"><polygon points="0,-8 2.0,-2.0 8,0 2.0,2.0 0,8 -2.0,2.0 -8,0 -2.0,-2.0" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.0" fill="#ffd56b" /></g>
+    <g transform="translate(313,513)"><polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="1.5" fill="#ffd56b" /></g>
+    <g transform="translate(272,584)"><polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="1.5" fill="#ffd56b" /></g>
+    <g transform="translate(371,548)"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.5" fill="#ffd56b" /></g>
+    <g transform="translate(270,145)"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.5" fill="#ffd56b" /></g>
+    <g transform="translate(220,285)"><polygon points="0,-8 2.0,-2.0 8,0 2.0,2.0 0,8 -2.0,2.0 -8,0 -2.0,-2.0" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.0" fill="#ffd56b" /></g>
+    <g transform="translate(255,112)"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5" fill="#fffbe6" opacity="0.9" /><circle cx="0" cy="0" r="2.5" fill="#ffd56b" /></g>
+</svg>

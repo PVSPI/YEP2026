@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5.4" />
+  <link rel="stylesheet" href="styles.css?v=5.7" />
 </head>
 <body class="locked">
 
@@ -31,7 +31,6 @@
       <button id="enter-btn" class="enter-btn" aria-label="Enter invitation">
         <span class="btn-glow"></span>
         <span class="btn-text">YOU'RE INVITED</span>
-        <span class="btn-subtext">Click to open party portal</span>
       </button>
     </div>
   </section>
@@ -67,7 +66,16 @@
 
     <!-- Hero / Invitation & Countdown Section -->
     <section id="home" class="section hero-section">
-      <div class="container text-center">
+      <!-- Ambient Decorative Atmosphere (Solar Glow, String Lights, Bokeh Flanks) -->
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="solar-glow-orb"></div>
+        <div class="solar-sunburst-rays"></div>
+        <img src="images/string-lights.svg" alt="" class="string-lights-decor" />
+        <img src="images/flank-left.svg" alt="" class="flank-decor flank-left" />
+        <img src="images/flank-right.svg" alt="" class="flank-decor flank-right" />
+      </div>
+
+      <div class="container text-center hero-content-relative">
         <p class="section-script-subtitle">Celebrating Another Milestone Year</p>
         <h2 class="hero-heading">PV Sinag Year End Party</h2>
         <div class="ornament-divider"><span>❦</span></div>
@@ -454,7 +462,7 @@
           </p>
         </div>
 
-        <div class="gallery-grid">
+        <div class="gallery-grid" id="gallery-grid">
           <div class="gallery-item" onclick="openLightbox(0)">
             <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80" alt="Team cheering together" />
             <div class="gallery-overlay"><span>View Photo</span></div>
@@ -479,6 +487,15 @@
             <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Evening party lights" />
             <div class="gallery-overlay"><span>View Photo</span></div>
           </div>
+        </div>
+
+        <!-- Google Drive Shared Album Button -->
+        <div id="gallery-drive-cta" class="gallery-drive-cta text-center">
+          <a href="https://drive.google.com/drive/folders/1Q0vFQHahz_pZ-u058eMCN6P7Z22rz_rf?usp=drive_link" target="_blank" rel="noopener noreferrer" class="drive-gallery-btn">
+            <span class="btn-icon">📁</span>
+            <span id="gallery-drive-btn-text">Open Party Photos in Google Drive</span>
+            <span class="ext-icon">↗</span>
+          </a>
         </div>
       </div>
     </section>
@@ -620,13 +637,34 @@
       <h3 class="modal-title">RSVP Received!</h3>
       <p class="modal-subtitle">Thank you for confirming your spot for PV Sinag Year End Party 2026.</p>
       <div id="modal-summary" class="modal-summary"></div>
+
+      <!-- Shared Google Drive Photo Upload Box -->
+      <div class="modal-drive-box">
+        <div class="drive-box-header">
+          <span class="drive-icon">📸</span>
+          <h4>Party Memories Photo Drive</h4>
+        </div>
+        <p class="drive-desc">
+          Scan the QR or click below to upload your photos &amp; videos to our shared Google Drive album!
+        </p>
+        <div class="drive-qr-wrapper">
+          <img src="images/drive-qr.svg" alt="Google Drive Upload QR Code" class="drive-qr-img" />
+        </div>
+        <div>
+          <a href="https://drive.google.com/drive/folders/1Q0vFQHahz_pZ-u058eMCN6P7Z22rz_rf?usp=drive_link" target="_blank" rel="noopener noreferrer" class="drive-upload-link">
+            <span>Open Google Drive Folder</span>
+            <span class="ext-icon">↗</span>
+          </a>
+        </div>
+      </div>
+
       <p class="modal-reminder">
-        Remember to prepare your <strong>₱500 Unisex Exchange Gift</strong> and wear your best <strong>"Tambay" Attire</strong> on <strong>Dec 9, 2026 at 1:00 PM</strong> at the PVS Staff House!
+        Remember to prepare your <strong>₱500 Unisex Exchange Gift</strong> and wear your <strong>"Tambay" Attire</strong> on <strong>Dec 9, 2026 at 1:00 PM</strong> at the PVS Staff House!
       </p>
       <button class="modal-close-btn" onclick="closeRSVPModalDirect()">Got It!</button>
     </div>
   </div>
 
-  <script src="script.js?v=5.6"></script>
+  <script src="script.js?v=5.8"></script>
 </body>
 </html>

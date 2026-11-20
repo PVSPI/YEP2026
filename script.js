@@ -74,8 +74,10 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// 4. Lightbox for Photo Gallery
-const galleryImages = [
+// 4. Lightbox & Live Google Drive Photo Gallery
+const DRIVE_GALLERY_API = 'https://script.google.com/macros/s/AKfycbxa60pYU31eXDbaN6U0nCs1035p1vKNPY3LUcIx3k_AV0bLa3h8j4_2nxa4w6PKn85z/exec';
+
+let galleryImages = [
   'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80',
   'images/table-setting.jpg',
@@ -83,6 +85,44 @@ const galleryImages = [
   'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80'
 ];
+
+async function syncDriveGallery() {
+  const grid = document.getElementById('gallery-grid');
+  const driveBtnText = document.getElementById('gallery-drive-btn-text');
+  if (!grid || !DRIVE_GALLERY_API) return;
+
+  try {
+    const res = await fetch(DRIVE_GALLERY_API);
+    if (!res.ok) return;
+    const drivePhotos = await res.json();
+
+    if (Array.isArray(drivePhotos) && drivePhotos.length > 0) {
+      // Sort newest first
+      drivePhotos.sort((a, b) => b.date - a.date);
+
+      // Lightbox holds all uploaded photos from Drive
+      galleryImages = drivePhotos.map(p => p.url);
+
+      // Display the latest 6 photos on the page grid
+      const latest6 = drivePhotos.slice(0, 6);
+      grid.innerHTML = latest6.map((photo, idx) => `
+        <div class="gallery-item" onclick="openLightbox(${idx})">
+          <img src="${photo.url}" alt="${photo.name || 'Party memory'}" loading="lazy" />
+          <div class="gallery-overlay"><span>View Photo</span></div>
+        </div>
+      `).join('');
+
+      // Update Drive button with total count
+      if (driveBtnText) {
+        driveBtnText.innerText = `View All Photos in Google Drive (${drivePhotos.length} Total)`;
+      }
+    }
+  } catch (err) {
+    console.warn('Drive gallery sync note:', err);
+  }
+}
+
+syncDriveGallery();
 
 let currentLightboxIndex = 0;
 const lightboxModal = document.getElementById('lightbox-modal');

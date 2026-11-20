@@ -1,0 +1,255 @@
+<svg class="string-lights-svg" viewBox="0 0 1440 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="bulbGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+    </filter>
+  </defs>
+  <g class="string-lights-wires">
+    <path d="M 0 115 C 180 195, 380 185, 640 65" stroke="rgba(205, 160, 95, 0.45)" stroke-width="1.5" fill="none" />
+    <path d="M 0 40 C 160 110, 340 100, 530 25" stroke="rgba(205, 160, 95, 0.45)" stroke-width="1.5" fill="none" />
+    <path d="M 1440 115 C 1260 195, 1060 185, 800 65" stroke="rgba(205, 160, 95, 0.45)" stroke-width="1.5" fill="none" />
+    <path d="M 1440 40 C 1280 110, 1100 100, 910 25" stroke="rgba(205, 160, 95, 0.45)" stroke-width="1.5" fill="none" />
+  </g>
+  <g class="string-lights-bulbs">
+    <rect x="28.7" y="123.5" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="30.2" cy="127.5" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="30.2" cy="127.5" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="30.2" cy="127.5" r="2.8" fill="#ffffff" />
+    <rect x="59.3" y="134.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="60.8" cy="138.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="60.8" cy="138.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="60.8" cy="138.3" r="2.8" fill="#ffffff" />
+    <rect x="90.4" y="143.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="91.9" cy="147.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="91.9" cy="147.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="91.9" cy="147.4" r="2.8" fill="#ffffff" />
+    <rect x="121.9" y="150.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="123.4" cy="154.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="123.4" cy="154.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="123.4" cy="154.8" r="2.8" fill="#ffffff" />
+    <rect x="154.0" y="156.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="155.5" cy="160.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="155.5" cy="160.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="155.5" cy="160.4" r="2.8" fill="#ffffff" />
+    <rect x="186.6" y="160.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="188.1" cy="164.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="188.1" cy="164.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="188.1" cy="164.3" r="2.8" fill="#ffffff" />
+    <rect x="219.9" y="162.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="221.4" cy="166.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="221.4" cy="166.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="221.4" cy="166.3" r="2.8" fill="#ffffff" />
+    <rect x="253.9" y="162.6" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="255.4" cy="166.6" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="255.4" cy="166.6" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="255.4" cy="166.6" r="2.8" fill="#ffffff" />
+    <rect x="288.5" y="161.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="290.0" cy="165.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="290.0" cy="165.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="290.0" cy="165.0" r="2.8" fill="#ffffff" />
+    <rect x="323.9" y="157.6" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="325.4" cy="161.6" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="325.4" cy="161.6" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="325.4" cy="161.6" r="2.8" fill="#ffffff" />
+    <rect x="360.0" y="152.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="361.5" cy="156.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="361.5" cy="156.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="361.5" cy="156.3" r="2.8" fill="#ffffff" />
+    <rect x="397.0" y="145.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="398.5" cy="149.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="398.5" cy="149.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="398.5" cy="149.1" r="2.8" fill="#ffffff" />
+    <rect x="434.9" y="136.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="436.4" cy="140.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="436.4" cy="140.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="436.4" cy="140.0" r="2.8" fill="#ffffff" />
+    <rect x="473.6" y="124.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="475.1" cy="128.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="475.1" cy="128.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="475.1" cy="128.9" r="2.8" fill="#ffffff" />
+    <rect x="513.3" y="111.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="514.8" cy="115.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="514.8" cy="115.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="514.8" cy="115.9" r="2.8" fill="#ffffff" />
+    <rect x="554.0" y="97.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="555.5" cy="101.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="555.5" cy="101.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="555.5" cy="101.0" r="2.8" fill="#ffffff" />
+    <rect x="595.7" y="80.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="597.2" cy="84.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="597.2" cy="84.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="597.2" cy="84.0" r="2.8" fill="#ffffff" />
+    <rect x="33.1" y="49.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="34.6" cy="53.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="34.6" cy="53.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="34.6" cy="53.8" r="2.8" fill="#ffffff" />
+    <rect x="68.3" y="61.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="69.8" cy="65.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="69.8" cy="65.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="69.8" cy="65.1" r="2.8" fill="#ffffff" />
+    <rect x="104.0" y="70.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="105.5" cy="74.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="105.5" cy="74.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="105.5" cy="74.1" r="2.8" fill="#ffffff" />
+    <rect x="140.3" y="76.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="141.8" cy="80.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="141.8" cy="80.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="141.8" cy="80.8" r="2.8" fill="#ffffff" />
+    <rect x="177.1" y="81.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="178.6" cy="85.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="178.6" cy="85.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="178.6" cy="85.1" r="2.8" fill="#ffffff" />
+    <rect x="214.4" y="83.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="215.9" cy="87.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="215.9" cy="87.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="215.9" cy="87.1" r="2.8" fill="#ffffff" />
+    <rect x="252.3" y="82.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="253.8" cy="86.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="253.8" cy="86.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="253.8" cy="86.9" r="2.8" fill="#ffffff" />
+    <rect x="290.5" y="80.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="292.0" cy="84.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="292.0" cy="84.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="292.0" cy="84.4" r="2.8" fill="#ffffff" />
+    <rect x="329.2" y="75.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="330.7" cy="79.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="330.7" cy="79.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="330.7" cy="79.8" r="2.8" fill="#ffffff" />
+    <rect x="368.3" y="69.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="369.8" cy="73.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="369.8" cy="73.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="369.8" cy="73.0" r="2.8" fill="#ffffff" />
+    <rect x="407.8" y="60.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="409.3" cy="64.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="409.3" cy="64.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="409.3" cy="64.1" r="2.8" fill="#ffffff" />
+    <rect x="447.7" y="49.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="449.2" cy="53.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="449.2" cy="53.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="449.2" cy="53.1" r="2.8" fill="#ffffff" />
+    <rect x="487.9" y="36.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="489.4" cy="40.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="489.4" cy="40.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="489.4" cy="40.1" r="2.8" fill="#ffffff" />
+    <rect x="1408.3" y="123.5" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1409.8" cy="127.5" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1409.8" cy="127.5" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1409.8" cy="127.5" r="2.8" fill="#ffffff" />
+    <rect x="1377.7" y="134.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1379.2" cy="138.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1379.2" cy="138.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1379.2" cy="138.3" r="2.8" fill="#ffffff" />
+    <rect x="1346.6" y="143.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1348.1" cy="147.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1348.1" cy="147.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1348.1" cy="147.4" r="2.8" fill="#ffffff" />
+    <rect x="1315.1" y="150.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1316.6" cy="154.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1316.6" cy="154.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1316.6" cy="154.8" r="2.8" fill="#ffffff" />
+    <rect x="1283.0" y="156.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1284.5" cy="160.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1284.5" cy="160.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1284.5" cy="160.4" r="2.8" fill="#ffffff" />
+    <rect x="1250.4" y="160.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1251.9" cy="164.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1251.9" cy="164.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1251.9" cy="164.3" r="2.8" fill="#ffffff" />
+    <rect x="1217.1" y="162.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1218.6" cy="166.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1218.6" cy="166.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1218.6" cy="166.3" r="2.8" fill="#ffffff" />
+    <rect x="1183.1" y="162.6" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1184.6" cy="166.6" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1184.6" cy="166.6" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1184.6" cy="166.6" r="2.8" fill="#ffffff" />
+    <rect x="1148.5" y="161.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1150.0" cy="165.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1150.0" cy="165.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1150.0" cy="165.0" r="2.8" fill="#ffffff" />
+    <rect x="1113.1" y="157.6" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1114.6" cy="161.6" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1114.6" cy="161.6" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1114.6" cy="161.6" r="2.8" fill="#ffffff" />
+    <rect x="1077.0" y="152.3" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1078.5" cy="156.3" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1078.5" cy="156.3" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1078.5" cy="156.3" r="2.8" fill="#ffffff" />
+    <rect x="1040.0" y="145.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1041.5" cy="149.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1041.5" cy="149.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1041.5" cy="149.1" r="2.8" fill="#ffffff" />
+    <rect x="1002.1" y="136.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1003.6" cy="140.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1003.6" cy="140.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1003.6" cy="140.0" r="2.8" fill="#ffffff" />
+    <rect x="963.4" y="124.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="964.9" cy="128.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="964.9" cy="128.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="964.9" cy="128.9" r="2.8" fill="#ffffff" />
+    <rect x="923.7" y="111.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="925.2" cy="115.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="925.2" cy="115.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="925.2" cy="115.9" r="2.8" fill="#ffffff" />
+    <rect x="883.0" y="97.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="884.5" cy="101.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="884.5" cy="101.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="884.5" cy="101.0" r="2.8" fill="#ffffff" />
+    <rect x="841.3" y="80.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="842.8" cy="84.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="842.8" cy="84.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="842.8" cy="84.0" r="2.8" fill="#ffffff" />
+    <rect x="1403.9" y="49.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1405.4" cy="53.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1405.4" cy="53.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1405.4" cy="53.8" r="2.8" fill="#ffffff" />
+    <rect x="1368.7" y="61.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1370.2" cy="65.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1370.2" cy="65.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1370.2" cy="65.1" r="2.8" fill="#ffffff" />
+    <rect x="1333.0" y="70.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1334.5" cy="74.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1334.5" cy="74.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1334.5" cy="74.1" r="2.8" fill="#ffffff" />
+    <rect x="1296.7" y="76.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1298.2" cy="80.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1298.2" cy="80.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1298.2" cy="80.8" r="2.8" fill="#ffffff" />
+    <rect x="1259.9" y="81.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1261.4" cy="85.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1261.4" cy="85.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1261.4" cy="85.1" r="2.8" fill="#ffffff" />
+    <rect x="1222.6" y="83.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1224.1" cy="87.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1224.1" cy="87.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1224.1" cy="87.1" r="2.8" fill="#ffffff" />
+    <rect x="1184.7" y="82.9" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1186.2" cy="86.9" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1186.2" cy="86.9" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1186.2" cy="86.9" r="2.8" fill="#ffffff" />
+    <rect x="1146.5" y="80.4" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1148.0" cy="84.4" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1148.0" cy="84.4" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1148.0" cy="84.4" r="2.8" fill="#ffffff" />
+    <rect x="1107.8" y="75.8" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1109.3" cy="79.8" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1109.3" cy="79.8" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1109.3" cy="79.8" r="2.8" fill="#ffffff" />
+    <rect x="1068.7" y="69.0" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1070.2" cy="73.0" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1070.2" cy="73.0" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1070.2" cy="73.0" r="2.8" fill="#ffffff" />
+    <rect x="1029.2" y="60.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="1030.7" cy="64.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="1030.7" cy="64.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="1030.7" cy="64.1" r="2.8" fill="#ffffff" />
+    <rect x="989.3" y="49.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="990.8" cy="53.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="990.8" cy="53.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="990.8" cy="53.1" r="2.8" fill="#ffffff" />
+    <rect x="949.1" y="36.1" width="3" height="4" rx="1" fill="#7a5522" opacity="0.8" />
+    <circle cx="950.6" cy="40.1" r="11" fill="#ffd87d" opacity="0.32" filter="url(#bulbGlow)" />
+    <circle cx="950.6" cy="40.1" r="6.5" fill="#ffeaa7" opacity="0.8" />
+    <circle cx="950.6" cy="40.1" r="2.8" fill="#ffffff" />
+  </g>
+</svg>
