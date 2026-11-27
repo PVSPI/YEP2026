@@ -88,7 +88,6 @@ let galleryImages = [
 
 async function syncDriveGallery() {
   const grid = document.getElementById('gallery-grid');
-  const driveBtnText = document.getElementById('gallery-drive-btn-text');
   if (!grid || !DRIVE_GALLERY_API) return;
 
   try {
@@ -111,11 +110,6 @@ async function syncDriveGallery() {
           <div class="gallery-overlay"><span>View Photo</span></div>
         </div>
       `).join('');
-
-      // Update Drive button with total count
-      if (driveBtnText) {
-        driveBtnText.innerText = `View All Photos in Google Drive (${drivePhotos.length} Total)`;
-      }
     }
   } catch (err) {
     console.warn('Drive gallery sync note:', err);
